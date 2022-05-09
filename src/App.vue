@@ -1,10 +1,17 @@
 <script setup lang="ts">
 import HeaderPage from './components/HeaderPage.vue';
-import FooterPage from './components/FooterPage.vue';
 </script>
 
 <template>
-  <header-page></header-page>
-  <router-view></router-view>
-  <footer-page></footer-page>
+    <el-container>
+      <el-header>
+        <header-page></header-page>
+      </el-header>
+      <el-main>
+        <router-view></router-view>
+      </el-main>
+    </el-container>
 </template>
+
+<style lang="scss" scope>
+</style>
